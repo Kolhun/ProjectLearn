@@ -6,21 +6,57 @@ using UnityEngine.UI;
 public class Main : MonoBehaviour
 {
     
-	public GameObject spawnItem;
-	public GameObject spawnItemParent;
-	private int spawnItemSize = 100;
+	public UIScrollElement elementPrefab;
+	public Transform elementContainer;
+	public InputField searchInput;
+	
+	public string[] spawnList;
+	private List<UIScrollElement> elements = new List<UIScrollElement>();
+	
+
     
     void Start()
     {
-	    int j = 0;
-	    while(j <= spawnItemSize)
-	    {
-	    	var inst = Instantiate(spawnItem);
-	    	var jinst = inst.transform.GetChild(1);
-	    	jinst.GetComponent<Text>().text = "Элемент" + j.ToString();
-	    	inst.transform.SetParent(spawnItemParent.transform);
-	    	j++;
-	    }
+	    CreateList();
     }
-
+	
+	public void CreateList()
+	{
+		foreach(var elem in elements)
+		{
+			Destroy(elem.gameObject);
+		}
+		
+		elements.Clear();
+		
+		foreach(var item in spawnList)
+		{
+			
+			var inst = Instantiate(elementPrefab,elementContainer);
+			inst.SetItem(item);
+			elements.Add(inst);
+			
+		}
+	}
+	public void Search() 
+	{
+		foreach(var elem in elements) 
+		{
+			var finded = elem.title.Contains(searchInput.text.ToLower());
+			elem.gameObject.SetActive(finded);
+		}
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
