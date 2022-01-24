@@ -174,10 +174,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9fb403e927e5f418085fad964a9a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valueInput: Lvl2
+  valueInput: Lvl1
+  valueNameInput: "\u0417\u0430\u043A\u0430\u0442 \u0432 \u0433\u043E\u0440\u0430\u0445"
+  valueImg: {fileID: 443388629}
   objParent: {fileID: 779870687}
   objChild: {fileID: 1444410216}
-  objMenu: {fileID: 658270894}
 --- !u!114 &87334173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +282,7 @@ GameObject:
   - component: {fileID: 139889162}
   - component: {fileID: 139889161}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: ImageThird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +530,7 @@ GameObject:
   - component: {fileID: 443388630}
   - component: {fileID: 443388629}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: ImageSecond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,7 +661,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+  m_Text: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435"
 --- !u!222 &449714116
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -845,6 +846,8 @@ MonoBehaviour:
   objParent: {fileID: 0}
   objChild: {fileID: 0}
   sceneLoad: 
+  sceneNameView: 
+  sceneSprite: {fileID: 0}
 --- !u!224 &658270895
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1376,10 +1379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9fb403e927e5f418085fad964a9a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valueInput: Lvl3
+  valueInput: Lvl1
+  valueNameInput: "\u0423\u0442\u0440\u043E \u043D\u0430 \u043E\u0437\u0435\u0440\u0435"
+  valueImg: {fileID: 139889161}
   objParent: {fileID: 779870687}
   objChild: {fileID: 1444410216}
-  objMenu: {fileID: 658270894}
 --- !u!114 &961353989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,7 +1423,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 961353990}
+  m_TargetGraphic: {fileID: 139889161}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1949,9 +1953,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueInput: Lvl1
+  valueNameInput: "\u041E\u0437\u0435\u0440\u043E \u0432 \u0433\u043E\u0440\u0430\u0445"
+  valueImg: {fileID: 1992811525}
   objParent: {fileID: 779870687}
   objChild: {fileID: 1444410216}
-  objMenu: {fileID: 658270894}
 --- !u!114 &1426204414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,7 +2405,7 @@ GameObject:
   - component: {fileID: 1992811526}
   - component: {fileID: 1992811525}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageFirst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

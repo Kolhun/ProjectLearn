@@ -2,23 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonContent : MonoBehaviour
 {
     
 	public string valueInput;
+	public string valueNameInput;
+	public Image valueImg;
     
 	public GameObject objParent;
 	public GameObject objChild;
-	public MainScript objMenu;
+
 	
 	public void ButtonExe()
 	{
 		
-		objMenu.sceneLoad = valueInput;
+		//MainScript.objMenu.sceneLoad = valueInput;
+		MainScript.objMenu.sceneNameView = valueNameInput;
+		MainScript.objMenu.sceneSprite = valueImg.sprite;
 		objParent.SetActive(false);
 		objChild.SetActive(true);
-
+		
 	}
 	public void ButtonOut()
 	{	
@@ -29,7 +34,8 @@ public class ButtonContent : MonoBehaviour
 	}
 	public void SceneLoad()
 	{
-		SceneManager.LoadScene(objMenu.sceneLoad);
+		DontDestroyOnLoad(MainScript.objMenu);
+		SceneManager.LoadScene("Lvl1");
 	}
 	public void SceneLoadMenu()
 	{
