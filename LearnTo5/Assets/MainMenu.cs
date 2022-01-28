@@ -18,8 +18,8 @@ public class MainMenu : MonoBehaviour
 			for(int i=0;i<10;i++)
 			{
 				list.Add(new LinkData(){
-					name = "VK"+i+t,
-					url = "https://vk.com/"+i+t
+					name = "Button",
+					url = "https://vk.com/1?toggle"+t+"=true"
 					});
 			}
 			links.Add(list);
