@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
 	}
 	
 }
-
+//ticky Fingers
 public class LinkData
 {
 	
