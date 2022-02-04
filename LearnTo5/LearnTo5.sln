@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{fb72eb01-6239-67f3-1445-44e9339a77bc}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptInspector", "ScriptInspector.csproj", "{ba8b435e-1337-fead-c4b1-4b3995a66a97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{fb72eb01-6239-67f3-1445-44e9339a77bc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fb72eb01-6239-67f3-1445-44e9339a77bc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ba8b435e-1337-fead-c4b1-4b3995a66a97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ba8b435e-1337-fead-c4b1-4b3995a66a97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
